@@ -5,8 +5,9 @@ let todos = [
   ];
   
   function getMaxId() {
-    let aaa = todos.map(todo=>todo['id']);
-    return Math.max(...aaa);
+    let allId = todos.map(todo=>todo['id']);
+    // return Math.max.apply(null, allId);
+    return Math.max(...allId);
   }
   
   console.log(getMaxId()); // 3
