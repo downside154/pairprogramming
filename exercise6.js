@@ -4,11 +4,15 @@ let todos = [
     { id: 1, content: 'Javascript', completed: false }
   ];
   
-  function toggleCompletedById(key) {
-    let newTodos = todos.filter(todo => todo.id === key)
-    newTodos[0].completed = !newTodos[0].completed
+  function toggleCompletedById(id) {
+    let newTodos = todos.filter(todo => todo.id === id);
+    newTodos[0].completed = !newTodos[0].completed;
   }
   
+  // const toggleCompletedById = (id) => {
+  //   todos = todos.map(todo => todo.id === id ? {...todo, completed:!todo.completed}:{...todo});
+  // };
+
   toggleCompletedById(1);
   
   console.log(todos);
