@@ -13,7 +13,7 @@ let todos = [
   //   todos = todos.map(todo => todo.id === id ? {...todo, completed:!todo.completed}:{...todo});
   // };
 
-  toggleCompletedById(1);
+  toggleCompletedById(2);
   
   console.log(todos);
   /*
