@@ -5,13 +5,16 @@ let todos = [
   ];
   
   function toggleCompletedById(id) {
-    let newTodos = todos.filter(todo => todo.id === id);
-    newTodos[0].completed = !newTodos[0].completed;
+    // let newTodos = todos.filter(todo => todo.id === id);
+    // newTodos[0].completed = !newTodos[0].completed;
+
+    // (todos.filter(todo => todo.id === id))[0].completed = !(todos.filter(todo => todo.id === id))[0].completed;
+
   }
   
-  // const toggleCompletedById = (id) => {
-  //   todos = todos.map(todo => todo.id === id ? {...todo, completed:!todo.completed}:{...todo});
-  // };
+  const toggleCompletedById = (id) => {
+    todos = todos.map(todo => todo.id === +id ? {...todo, completed:!todo.completed}:{...todo});
+  };
 
   toggleCompletedById(2);
   

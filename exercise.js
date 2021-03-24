@@ -18,6 +18,21 @@ const todos = [
     return html;
   }
   
+  // function render() {  
+  //   return todos.map(todo => {
+  //       return `
+  //       <li id="${todo.id}">
+  //         <label><input type="checkbox" ${todo.completed ? 'checked' : ''}>${todo.content}</label>
+  //       </li>`;
+  //       }
+  //   );
+  // }
+  
+
+
+
+
+
   console.log(render());
   /*
   <li id="3">
